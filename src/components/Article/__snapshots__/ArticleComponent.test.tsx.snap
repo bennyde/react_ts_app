@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ArticleComponent /> test actions should render with given state from Redux store 1`] = `
+<div
+  className="section article theme-santafe"
+>
+  <div
+    className="article-content"
+  >
+    <h1>
+      Top skiing weekends
+    </h1>
+    <img
+      alt="image"
+      src="http://localhost:8080/public/assets/chamonix.jpg"
+    />
+    <p>
+      John Smith
+    </p>
+    <p>
+       Thursday, August 8th, 2019
+    </p>
+    <p>
+      Whether you’ve business nearby or have simply had a trying week at work, what better way to relax than to visit one of the world’s greatest ski resorts?
+    </p>
+    <p>
+      Chamonix, France - Located a mere 88km from Geneva airport, the infamous resort of Chamonix is renowned the world over for its adrenaline inducing slopes and postcard picture scenery. As if the daylight hour activities weren’t enough, Chamonix also boasts a lively nightlife and host of fine dining opportunities. 
+St Anton, Austria - Widely cited as the best ski resort in Austria, St Anton is largely intended for the experienced skier and offers an unparalleled number and variety of slopes. However, if you’re feeling less adventurous then the many slope-side bars and restaurants offer an opportunity to kick back and observe the vibrant ski scene. 
+Mayrhofen, Austria - A short 65km from Innsbruck Airport lies Mayrhofen, a 630m high village with a buzzy atmosphere and a great many skiing opportunities for intermediate and advanced skiers alike. The destination is especially accommodating to snowboarders, who customarily gather in April for the annual Snowbombing festival.
+    </p>
+  </div>
+</div>
+`;
+
+exports[`<ArticleComponent /> test actions should update with given state from Redux store 1`] = `undefined`;

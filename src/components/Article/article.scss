@@ -1,0 +1,11 @@
+.article {
+    max-width: 82rem;
+    margin: 0 auto;
+    img {
+        width: 100%;
+        max-width: 80rem;
+    }
+}
+.article-content h1::first-letter {
+    text-transform: capitalize;
+}

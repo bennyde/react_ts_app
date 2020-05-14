@@ -1,0 +1,88 @@
+html {
+  font-size: 62.5%; /* 10px = 1rem */
+  overflow-y: scroll;
+}
+body {	
+	font-size: 1.6rem;
+	line-height: 1.5;
+	padding: 0;
+	margin: 0;
+}
+a {
+	color: $kashmir-blue;
+	text-decoration: none;
+	&:hover {
+        color: $tussock;
+    }
+}
+p {
+	color: black;
+	font-size: 1.6rem;
+}
+h1 {
+	color: $santafe;
+	font-size: 1.9rem;
+	font-family: $font;
+	font-weight: 200;
+	margin: 1.5rem 0;
+}
+h2 {
+	color: $kashmir-blue;
+	font-size: 1.7rem;
+	font-family: $font;
+	font-weight: 100;
+	margin: 0rem 0 1rem;	
+}
+h2::first-letter {
+	text-transform: capitalize;
+}
+.container {
+	margin: 0 auto;
+	max-width: 116rem;	
+}
+.toolbar {
+	background-color: $grey-lightest;
+	border-bottom: 0.1rem solid $grey;
+	padding: 6rem 0 1rem;
+	margin: 0 1rem;
+	text-align: right;
+	width: 100%;
+}
+.section {
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+	background-color: $grey-lightest;
+	margin: 0 1rem;
+}
+.section .left-column {
+	background-color: $grey-lightest;
+	display: block;
+	float: left;
+	padding-left: 1rem;
+}
+.section .right-column {
+	background-color: $grey-lightest;
+	display: block;
+	float: left;
+	max-width: 25rem;
+	padding: 0 1rem;
+}
+input {
+	font-size: 1.3rem;
+	height: 2rem;
+	border-radius: 0.5rem;
+	border: 0.1rem solid #d9d9d9;
+	padding: 0.3rem 0.5rem;
+	margin-left: 0.5rem;
+}
+input[type=submit] {
+	color: $greyer;
+	height: 2.7rem;
+    background-color: white;
+	border-radius: 0.5rem;
+	border: 0.1rem solid #d9d9d9;
+	padding: 0.3rem 1rem;	
+	margin-left: 0.5rem;
+	cursor: pointer;
+}

@@ -1,0 +1,62 @@
+@mixin theme($theme-name, $bg-color, $theme-color, $theme-color-alt) {
+   .#{$theme-name} {
+      .article {
+         background-color: $bg-color;
+	   }
+	   h1, h2 {
+         color: $theme-color;
+      }
+      .home .grid ul li a span h3 {
+         background-color: $theme-color;
+      }
+      #logo  {
+         background-color: $theme-color;
+      }
+      .most-popular ol li::marker {
+         color: $theme-color;
+      }
+      .most-popular ol li a h3 {
+         background-color: transparent;
+         color: $theme-color;
+      }
+      .home .grid ul li a {
+         border-bottom: 1px solid $theme-color;
+      }
+      .toolbar {
+         border-bottom: 0.1rem solid $theme-color;
+      }
+      #header {
+         background-color: $theme-color-alt;
+      }
+      #desktop_menu li a {
+         &:hover {
+            background-color: $theme-color;
+         }
+         &:hover > span {
+            color: $theme-color-alt;
+         }
+      }
+      .pagination-links div h3, .toolbar .login-link a {
+         color: $theme-color;
+         &:hover {
+			   color: $theme-color-alt;
+		   }
+      }
+      .footer {
+         background-color: $theme-color-alt;
+      }
+      #footer_menu {
+         border-left: 0.1rem solid $theme-color;
+      }
+      #footer_menu li a span {
+         color: $theme-color;
+      }
+      #footer_logo {
+         color: $grey;
+         background-color: $theme-color
+      }
+   }
+}
+@include theme(theme-tussock, $grey-lightest, $tussock, $greyer);
+@include theme(theme-santafe, $grey-lightest, $santafe, $kashmir-blue);
+

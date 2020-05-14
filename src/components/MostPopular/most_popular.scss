@@ -1,0 +1,30 @@
+.most-popular ol {
+    padding: 0 1rem 0 2rem;
+}
+.most-popular ol li::marker {
+    font-family: $font;
+    font-size: 1.4rem;
+}
+.most-popular ol li a {
+    display: block;
+    &:hover > h2, &:hover > h3 {
+        color: $greyer;
+    }
+}
+.most-popular ol li a h2 {
+    color: $waikawa-grey;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    margin-bottom: 0;
+}
+.most-popular ol li a h3 {
+    background-color: transparent;
+    font-family: $font;
+    text-align: right;
+    font-size: 1.3rem;
+    font-weight: 100;
+    text-transform: lowercase;
+    margin-top: 0;
+    position: relative;
+}

@@ -1,0 +1,81 @@
+.home {
+	.grid ul li a span h3 {
+		color: white;
+		font-family: $font;
+		font-weight: 100;
+		font-size: 1.4rem;
+		text-transform: uppercase;
+		position: absolute;
+		top: 0;
+		margin: 0;
+		padding: 0.2rem 0.8rem;
+	}
+	.grid > ul {	
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+		grid-gap: 1rem;
+		background-color: $grey-lightest;
+		padding: 0;
+	}
+	.grid > ul li {
+		list-style-type: none;
+		background-color: white;	
+		padding: 0;
+		position: relative;
+	}
+	.grid ul li a {
+		background-color: white;
+		outline: none;
+		display: table;
+		height: 100%;
+		width: 100%;
+		&:hover > span > h3 {
+			background-color: $greyer;
+		}
+		&:hover > span > h2, &:hover > span > p {
+			color: $greyer;
+		}
+		&:hover > span > img {
+			opacity: 0.8;
+		}
+		&:hover {
+			border-bottom: 1px solid $grey;
+		}
+	}
+	.grid ul li a span {
+		display: block;
+		position: relative;
+		margin: 1rem;
+	}
+	.grid ul li a span img {
+		width: 100%;
+	}
+	.grid ul li a span p {
+		color: $greyer;
+	}
+	.pagination-links {
+		width: 100%;
+		padding: 2rem 0;
+	}
+	.pagination-links div {
+		padding: 1rem;
+		cursor: pointer;
+	}
+	.pagination-links div h3 { 
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 1.6rem;
+		font-weight: 100;
+		text-transform: uppercase;
+	}
+	.pagination-links div h3 span {
+		font-size: 2.1rem;
+	}
+	#older_articles {
+		float: left;
+		padding-left: 0;
+	}
+	#newer_articles {
+		float: right;
+		padding-right: 0;
+	}
+}

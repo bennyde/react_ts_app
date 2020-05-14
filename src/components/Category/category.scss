@@ -1,0 +1,35 @@
+.category {
+    max-width: 82rem;
+    margin: 0 auto;
+    flex-direction: column;
+    padding: 0 2rem;
+    h1 {
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+    ul {	
+        padding: 0;
+    }
+    ul li {
+        list-style-type: none;
+        background-color: white;	
+        padding: 0;
+        margin-bottom: 1rem;
+        position: relative;
+    }
+    ul li a {
+        background-color: white;
+        outline: none;
+        display: table;
+        padding: 1rem;
+        &:hover > span > h2{
+            color: $waikawa-grey;
+        }
+        &:hover > span > p {
+            color: $waikawa-grey;
+        }
+    }
+    .grid ul li a p {
+	    color: black;
+    }
+}
